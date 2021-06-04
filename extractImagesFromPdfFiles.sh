@@ -1,8 +1,3 @@
-# ExtractImagesFromPdfFilesBatchScript
-
-It extract Images From a bunch of Pdf Files in the current directory. It uses pdftocairo program.
-
-```bash
 #!/bin/bash
 # extract images from a pdf file
 
@@ -13,6 +8,3 @@ do
     pdftocairo -jpeg $pdfFileName ./${pdfFileName}.images
     mv *.jpg ${pdfFileName}.images
 done
-```
-
-
