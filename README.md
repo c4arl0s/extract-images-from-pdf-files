@@ -1,6 +1,16 @@
+# [go back to list of bash scripts](https://github.com/c4arl0s#apps)
+
 # ExtractImagesFromPdfFilesBatchScript
 
 It extract Images From a bunch of Pdf Files in the current directory. It uses pdftocairo program.
+
+# Dependencies for macOS
+
+```bash
+brew install poppler
+```
+
+# Code
 
 ```bash
 #!/bin/bash
@@ -14,5 +24,3 @@ do
     mv *.jpg ${pdfFileName}.images
 done
 ```
-
-
