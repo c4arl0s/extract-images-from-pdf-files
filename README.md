@@ -25,33 +25,18 @@ chmod +x install.sh
 ./install.sh
 ```
 
-If your user cannot write to `/usr/local/bin`, run:
-
-```bash
-sudo ./install.sh
-```
-
 After installation, the command is available as:
 
 ```bash
-extract-images-from-pdf-files
+pdf2imgx
 ```
 
-## What `install.sh` does
-
-`install.sh`:
-
-1. Finds `extract-images-from-pdf-files.sh` in this repository.
-2. Ensures the script is executable.
-3. Creates or updates a symbolic link at:
-   `/usr/local/bin/extract-images-from-pdf-files`
-
-That symlink lets you run the script from any directory in your terminal.
+## install
 
 ## Usage
 
 Move to a directory that contains PDF files, then run:
 
 ```bash
-extract-images-from-pdf-files
+pdf2imgx
 ```
