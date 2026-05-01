@@ -2,8 +2,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SOURCE_SCRIPT="${SCRIPT_DIR}/extract-images-from-pdf-files.sh"
-TARGET_LINK="/usr/local/bin/extract-images-from-pdf-files"
+SOURCE_SCRIPT="${SCRIPT_DIR}/pdf2imgx.sh"
+TARGET_LINK="/usr/local/bin/pdf2imgx"
 
 if [[ ! -f "${SOURCE_SCRIPT}" ]]; then
   echo "Source script not found: ${SOURCE_SCRIPT}" >&2
@@ -27,4 +27,4 @@ else
 fi
 
 echo "You can now run:"
-echo "  extract-images-from-pdf-files"
+echo "pdf2imgx"
